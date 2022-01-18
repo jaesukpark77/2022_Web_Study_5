@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대입연산자</title>
+</head>
+<body>
+    <script>
+        // 대입연산자 : 연산된 데이터를 최종적으로 다시 원래의 변수애다가 치환
+        var num1 = 10;
+        var num2 = 3;
+
+        // num1 = num1 + num2;  // + - * / %
+        num1 += num2;
+        document.write(num1, '<br>');
+
+        num1 -= num2;
+        document.write(num1, '<br>');
+
+        num1 *= num2;
+        document.write(num1, '<br>');
+
+        num1 /= num2;
+        document.write(num1, '<br>');
+
+        num1 %= num2;
+        document.write(num1, '<br>');
+    </script>
+
+    <hr>
+
+    <button type="button" onclick="plus()">+=10</button>
+    <button type="button" onclick="minus()">-=10</button>
+    <button type="button" onclick="multi()">*=10</button>
+    <button type="button" onclick="divid()">/=10</button>
+    <button type="button" onclick="remind()">%=10</button>
+    <p id = "num_result">0</p>
+
+    <script>
+        const num_result = document.getElementById('num_result');
+        function plus(){
+            let num = Number(num_result.textContent);
+            num += 10;
+            num_result.innerText = num;
+        }
+
+        function minus(){
+            let num = Number(num_result.textContent);
+            num -= 10;
+            num_result.innerText = num;
+        }
+
+        function multi(){
+            let num = Number(num_result.textContent);
+            num *= 10;
+            num_result.innerText = num;
+        }
+
+        function divid(){
+            let num = Number(num_result.textContent);
+            num /= 10;
+            num_result.innerText = num;
+        }
+
+        function remind(){
+            let num = Number(num_result.textContent);
+            num %= 10;
+            num_result.innerText = num;
+        }
+
+
+    </script>
+</body>
+</html>
