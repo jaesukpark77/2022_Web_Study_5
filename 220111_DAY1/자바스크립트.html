@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+<body>
+    자바스크립트
+    <script>
+        // 선택자.메서드('내용')
+        // 문서에 'Hello World!' 라고 입력
+        // 문서.입력하여라('Hello World!')
+
+        document.write('Hello World!');        
+        document.write('이소롱');        
+
+    </script>
+    반갑습니다.
+    
+    <br>
+    
+    <p id="t1">text1</p>
+
+    <script>
+        document.getElementById("t1").innerText = 'javaScript';
+    </script>
+
+    <hr>
+    <p id="t2">text2</p>
+    <button type="button" onclick="document.getElementById('t2').innerText = 'PSD'">name</button>
+
+    <hr>
+
+    <p id="t3">text3</p>
+    <button type="button" onclick="gender()">성별</button>
+
+    <script>
+        function gender(){
+            document.getElementById('t3').innerText='여자'
+        }
+    </script>
+
+    <hr>
+
+    <p id="t4">text4</p>
+    <script>
+        document.getElementById('t4').innerText = 5 + 6
+    </script>
+</body>
+</html>
