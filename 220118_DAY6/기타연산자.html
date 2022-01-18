@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타연산자</title>
+</head>
+<body>
+    <script>
+        // [쉼표연산자]
+        const con1 = 10,
+                con2 = 20,
+                con3 = 30;
+
+        const con4 = (1+2, 3+4);    // 1+2는 평가는 되지만 마지막 값만 최종적으로 반환된다.
+        // for문 : for(a=1, b=3, c=a*b; a<1; a++){  }
+
+        // [그룹연산자]
+        num = (1 + 4) * 3
+        // text = num1 + '과 ' +num2+'를 더하면 '+(num1+num2)+'값이 나옵니다.'
+
+        // [typeof : 데이터형식을 체크하는 명령어]
+        result = '100' + 200;
+        document.write(typeof result, '<br>');
+        
+        console.log(typeof 10); // number
+        console.log(typeof 'SBS'); // string
+        console.log(typeof true); // boolean
+        console.log(typeof []); // object
+        console.log(typeof {}); // object
+        console.log(typeof null); // object
+        console.log(typeof undefined); // undefined
+        console.log(typeof function(){}); // function
+
+        // [연산자 우선순위]
+        /*
+        1. ( )
+        2. ++ -- !
+        3. * / % + -
+        4. > >= < <= == === != !==
+        5. && ||
+        6. = += -= *= /= %=
+        */
+
+        a = (10+20)*2;
+        // b = num1 > num2 || num2 >= num3 || num3 > num4;
+
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = 30;
+        c = ++num1+num2*num3;
+        document.write(c, '<br>'); 
+
+
+    </script>
+</body>
+</html>
