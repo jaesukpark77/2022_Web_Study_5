@@ -18,7 +18,7 @@
             float:left;
             margin:10px;
         }
-        .inid{
+        .indi{
             margin:10px;
             text-align:center;
         }
@@ -53,10 +53,10 @@
         var movieTitle = new Array('장르만 로맨스','베놈2','프렌치 디스패치','엔칸토','사바나','이터널스','듄','보이스');
         
         var mov_li = document.querySelector+('.gallery').childElementCount - 1;
-        let mov_size = movieTitle.length    // 배열의 개수
+        let mov_size = movieTitle.length;    // 배열의 개수
 
         var mov_list = '';
-        for(let i=0;i<mov_li;i++){
+        for(let i=0;i<mov_size;i++){
             mov_list += '<li>'+(i+1)+'. '+movieTitle[i]+'</li>';
             document.querySelector('.indi').innerHTML = mov_list;
         }
